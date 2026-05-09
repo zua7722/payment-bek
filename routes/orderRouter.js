@@ -1,6 +1,6 @@
 const Router = require("express");
 const router = new Router();
-const orderController = require("../controllers/OrderController");
+const orderController = require("../controllers/orderController");
 const authMiddleware = require("../middleware/middleware");
 
 router.post("/webhook", orderController.handlePaymentWebhook);
